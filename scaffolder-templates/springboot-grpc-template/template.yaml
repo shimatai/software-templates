@@ -58,7 +58,7 @@ spec:
       action: fetch:template
       input:
         url: ./skeleton
-        targetPath: ./workspace/${{ parameters.component_id }}
+        targetPath: ./sub-directory/${{ parameters.component_id }}
         copyWithoutRender:
           - .github/workflows/*
         values:
@@ -83,7 +83,7 @@ spec:
       action: azure:repo:push
       input:
         branch: main
-        sourcePath: ./workspace
+        sourcePath: ./sub-directory
         gitCommitMessage: Added project ${{ parameters.component_id }} files
 
     - id: register
