@@ -1,12 +1,13 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template
-  title: Micro Serviço Java
-  description: Micro serviço implementado em Java, Spring Boot 3, arquitetura hexagonal.
+  name: bff-nodejs
+  title: BFF NodeJS
+  description: Backend for frontend implementado em Typescript, Nodejs.
   tags:
     - recommended
-    - java
+    - node
+    - bff
 spec:
   owner: arquitetura@elo.com.br
   type: service

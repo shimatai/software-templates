@@ -1,12 +1,15 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template
-  title: Micro Serviço Java
-  description: Micro serviço implementado em Java, Spring Boot 3, arquitetura hexagonal.
+  name: data-integration
+  title: Integração de dados (MySQL para Datalake)
+  description: Extração de dados de banco MySQL para Datalake Az Blob Storage.
   tags:
     - recommended
-    - java
+    - mysql
+    - etl
+    - blob
+    - azure
 spec:
   owner: arquitetura@elo.com.br
   type: service

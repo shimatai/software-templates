@@ -1,12 +1,14 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template
-  title: Micro Serviço Java
-  description: Micro serviço implementado em Java, Spring Boot 3, arquitetura hexagonal.
+  name: cluster-k8s-aks
+  title: Cluster K8s AKS
+  description: Serviço gerenciado Azure Kubernetes Service.
   tags:
     - recommended
-    - java
+    - cluster
+    - kubernetes
+    - aks
 spec:
   owner: arquitetura@elo.com.br
   type: service

@@ -1,12 +1,14 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template
-  title: Micro Serviço Java
-  description: Micro serviço implementado em Java, Spring Boot 3, arquitetura hexagonal.
+  name: api-template
+  title: API
+  description: Exposição de API através do API Gateway em formato Open API.
   tags:
     - recommended
-    - java
+    - api
+    - gateway
+    - openapi
 spec:
   owner: arquitetura@elo.com.br
   type: service
