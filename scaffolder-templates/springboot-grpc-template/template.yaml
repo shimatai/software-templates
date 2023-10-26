@@ -7,6 +7,7 @@ metadata:
   tags:
     - recommended
     - java
+    - microservice
 spec:
   owner: arquitetura@elo.com.br
   type: service
@@ -53,6 +54,15 @@ spec:
 #              - github.com
 
   steps:
+    - id: cloneAzureRepo
+      name: Clone Azure Repo
+      action: azure:repo:clone
+      input:
+        remoteUrl: "https://elobr@dev.azure.com/elobr/CICD/_git/elo-service1"
+        repoUrl: "https://elobr@dev.azure.com/elobr/CICD/_git/elo-service1"
+        branch: "main"
+        targetPath: ./sub-directory
+
     - id: template
       name: Fetch Skeleton + Template
       action: fetch:template
